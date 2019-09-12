@@ -50,7 +50,7 @@ namespace UnityTiming.Data
         /// <summary>
         /// Constructor
         /// </summary>
-        /// <param name="tickTime"></param>
+        /// <param name="tickTime">Tick time</param>
         public TimingData(float tickTime)
         {
             if (tickTime <= float.Epsilon)
@@ -74,7 +74,7 @@ namespace UnityTiming.Data
         /// <summary>
         /// Proceed time
         /// </summary>
-        /// <param name="time"></param>
+        /// <param name="time">Time</param>
         /// <returns>Number of ticks</returns>
         public int ProceedTime(float time)
         {
@@ -86,7 +86,7 @@ namespace UnityTiming.Data
             if (time > 0.0f)
             {
                 elapsedTickTime += time;
-                while (elapsedTickTime <= tickTime)
+                while (elapsedTickTime >= tickTime)
                 {
                     elapsedTickTime -= tickTime;
                     ++ret;
