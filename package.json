@@ -1,0 +1,18 @@
+{
+    "name": "com.bigeti.timing",
+    "version": "1.0.0",
+    "displayName": "Timing system for Unity",
+    "description": "This package contains a timing system for Unity.",
+    "dependencies": {},
+    "keywords": [
+        "timing",
+        "time",
+        "timer",
+        "clock"
+    ],
+    "author": {
+        "name": "Ethem Kurt",
+        "email": "bigeti.ethem@gmail.com",
+        "url": "https://bigeti.de/"
+    }
+}
